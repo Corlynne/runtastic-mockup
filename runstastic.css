@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+	background: #ccc;
+}
+
+/* Mobile-screen size wrapper */
+.wrapper {
+	width: 412px;
+	height: 732px;
+	margin: 0 auto;
+	border: 3px solid black;
+	border-radius: 5px;
+	background: white;
+	overflow: auto;
+	position: relative;
+}
+
+/* Expand main images to full width */
+.wrapper img.bg {
+	width: 100%;
+}
+
+/*
+*		SCREEN ONE
+*/
+
+/* Top part - toggleble images */
+.wrapper .top {
+	cursor: pointer;
+}
+.wrapper .top .with-photo{
+	display: none;
+}
+.wrapper .top.has-photo .without-photo{
+	display: none;
+}
+.wrapper .top.has-photo .with-photo{
+	display: block;
+}
+
+/* Floating action icon */
+img.save {
+	width: 72px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+/* Mood and Surface lists */
+.info {
+	position: relative;
+}
+.list {
+	display: none;
+	box-shadow: 1px 1px 5px 0px #666;
+	position: absolute;
+	top: 100px;
+	z-index: 1;
+	left: 12px;
+	right: 12px;
+	background: white;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.list ul {
+	list-style-type: none;
+	padding: 10px;
+	margin: 0;
+}
+.list ul li {
+	padding: 5px;
+	cursor: pointer;
+}
+.list ul li:hover {
+	background: #eee;
+}
+.list ul li img {
+	width: 80px;
+}
+.list ul li span {
+	font-size: 20px;
+	position: relative;
+	bottom: 30px;
+	left: 20px;
+}
+.moods-opener {
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 100px;
+	left: 15px;
+	cursor: pointer;
+}
+.surfaces-opener {
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	cursor: pointer;
+}
+
+/* Sharing icons */
+.share {
+	margin: 20px 30px 0px 30px;
+}
+.share img {
+	width: 120px;
+	display: block;
+	padding-bottom: 5px;
+	filter: grayscale(1);
+	cursor: pointer;
+}
+.share img.active {
+	filter: none;
+}
+
+
+
+/*
+*		SCREEN TWO
+*/
+.screen-two {
+	display: none;
+	cursor: pointer;
+}
